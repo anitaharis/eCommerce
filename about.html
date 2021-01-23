@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content=" Simple Decore Store In San Diego California">
+<meta name="author" content="Anita Haris">
+<title>Zeba</title>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/77fdce3366.js" crossorigin="anonymous"></script>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap CSS -->
+
+<script src="JS/main.js"></script>
+<script src="JS/cart.js"></script>    
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+    
+<body>
+<div class="container-body">
+    <header class="site-header m-3 text-center"> 
+        <a class="site-header-logo logo" href="index.html">Zeba</a>
+    </header>
+        <center class="topnav" id="myTopnav">
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" id="cart-info"id="cart-info">Cart<i class="icon-btn fa fa-shopping-cart" id="cart-info"id="cart-info" aria-hidden="true"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        </center>
+
+        <hr id=hr>
+
+          <!--modal shopping cart-->
+          <div id="productModal" class="modal col-xs-12">
+              <div class="modal-content">
+                  <div class="modalHeader">
+                    <span class="close">&times;</span>
+                  </div>
+                    <div class="container cart-section">
+                        <h2 class="section-header text-center mb-5">CART</h2>
+                        <div class="cart-row d-flex justify-content-around">
+                            <span class="cart-item cart-header cart-column">ITEM</span>
+                            <span class="cart-price cart-header cart-column">PRICE</span>
+                            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                        </div>
+                        <div class="cart-items">
+                            
+                        </div>
+                        <div class="cart-total mb-5">
+                            <span class="cart-total-title">Total</span>
+                            <span class="cart-total-price">$0</span>
+                        </div>
+                        <button class="btn btn-primary btn-purchase mb-5" role = "buttom" >PURCHASE</button>
+                    
+                    </div>
+              </div>  
+          </div>
+
+        <section class="container main-content">
+            <div class="section-about row">
+                <div class=" col-lg-6 mt-4 pb-5">
+                    <img class="about-img" src="images/about.png">
+                    
+                </div>
+                <div class="about-text col-lg-6">
+                    <h1>Our Story</h1>
+                    <h6 class="text-muted font-italic">SINCE 2000</h6>
+                    <p>Lorem ipsum dolor sit amet, latine concludaturque cum ut. 
+                        Nam equidem apeirian necessitatibus at, sed mollis delectus no. 
+                        Vix viris consetetur cu, est voluptua accusata urbanitas no. 
+                        Vim legere integre in, ius ut iriure dolorum graecis. 
+                        Vix ei fugit laudem contentiones.</p>
+                        <p>Lorem ipsum dolor sit amet, latine concludaturque cum ut. 
+                        Nam equidem apeirian necessitatibus at, sed mollis delectus no. 
+                        Vix viris consetetur cu, est voluptua accusata urbanitas no.
+                        Vix viris consetetur cu, est voluptua accusata urbanitas no. 
+                        Vim legere integre in, ius ut iriure dolorum graecis.</p>
+                </div> 
+            </div>
+            
+        </section>
+        <!--/main-container-->
+        </div>
+        <footer>
+            <div  class="container d-flex justify-content-around p-3">
+                <div class="footer-item">
+                    <h6 class="footer-heading">MY ACCOUNT</h6>
+                    <a  href="">Member</a>
+                    <a href="">Order</a>
+                </div>
+                <div  class="footer-item">
+                    <h6 class="footer-heading">ABOUT</h6>
+                    <a href="">Our Brand</a>
+                    <a href="">Policy</a>
+                </div>
+                <div  class="footer-item">
+                    <h6 class="footer-heading">CUSTOMER CARE</h6>
+                    <a href="">Shipping & Return</a>
+                    <a href="">Order Status</a>
+                </div>
+                
+            </div>
+            <hr class="mt-3">
+            <div  class="social-link text-center pb-3">
+                <h6 class="footer-heading">FOLLOW US</h6>
+                <a href="" class="text-white"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="" class="text-white"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="" class="text-white"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+            </div>
+        </footer>
+        
+<script type="text/javascript">
+        function myFunction() {
+        let x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+    </script>
+            
+</body>
+</html>
